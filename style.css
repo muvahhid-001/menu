@@ -18,24 +18,23 @@ html{
 .header__close{
     margin-left: 13px;
 }
-.header__close-bg{
-    background-image: url(img/close.svg);
+.header__close-bg,
+.header__search-bg,
+.down-menu__phone-bg,
+.down-menu__comment-bg,
+.down-menu__man-bg {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FF3E79;
     width: 40px;
     height: 40px;
-    margin-left: 0;
     border-radius: 50%;
 }
-.header__search-bg{
+.header__close-bg {
+    background-image: url(img/close.svg);
+}
+.header__search-bg {
     background-image: url(img/search.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #FF3E79;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
 }
 .logo{
     margin-left: 15px;
@@ -82,12 +81,6 @@ a.list-li__a:hover {
 }
 .down-menu__phone-bg{
 background-image: url(img/phone.svg);
-background-repeat: no-repeat;
-background-position: center;
-background-color: #FF3E79;
-width: 40px;
-height: 40px;
-border-radius: 50%;
 margin-left: 0;
 }
 a.phone{
@@ -95,13 +88,7 @@ a.phone{
 }
 .down-menu__comment-bg{
     background-image: url(img/comment.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #FF3E79;
     background-size: 25px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
 }
 .down-menu{
     margin-left: 15px;
@@ -113,12 +100,6 @@ a.phone{
 }
 .down-menu__man-bg{
     background-image: url(img/man.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #FF3E79;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
     }
 .tel{
     margin-bottom: 25px;
