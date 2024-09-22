@@ -76,7 +76,7 @@ a.list-li__a {
     transition: opacity 0.5s ease;
 }
 
-a.list-li__a:hover {
+a.list-li__a:hover:not(.active) {
     opacity: 0.6;
 }
 .down-menu__phone-bg{
@@ -138,7 +138,7 @@ a.down-info_chanlg{
     transition: opacity 0.3s ease;
 }
 
-.down-info_chanlg:hover {
+.down-info_chanlg:hover:not(.lang-active) {
     opacity: 0.5;
 }
 @font-face {
