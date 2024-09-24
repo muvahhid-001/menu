@@ -147,6 +147,7 @@ button:hover:not(.lang-active) {
 }
 .down-info_chanlg{
     list-style: none;
+    color: #1B1C21;
 }
 .lang-active{
     color: #7E7E82 !important;
@@ -182,7 +183,7 @@ button:hover:not(.lang-active) {
             margin-top: 30px;
         }
         .down-menu{
-            bottom: 130px;
+            bottom: 135px;
         }
         .down-info__change-lang{
             margin-top: 3px;
