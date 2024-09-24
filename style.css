@@ -141,13 +141,13 @@ button{
     font-size: 16px;
     transition: 0.3s;
     padding: 0;
+    color: #1B1C21;
 }
 button:hover:not(.lang-active) {
     opacity: 0.6;
 }
 .down-info_chanlg{
     list-style: none;
-    color: #1B1C21;
 }
 .lang-active{
     color: #7E7E82 !important;
