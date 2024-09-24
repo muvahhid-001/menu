@@ -19,10 +19,7 @@ html{
     margin-left: 13px;
 }
 .header__close-bg,
-.header__search-bg,
-.down-menu__phone-bg,
-.down-menu__comment-bg,
-.down-menu__man-bg {
+.header__search-bg{
     background-repeat: no-repeat;
     background-position: center;
     background-color: #FF3E79;
@@ -79,16 +76,17 @@ a.list-li__a {
 a.list-li__a:hover:not(.active) {
     opacity: 0.6;
 }
-.down-menu__phone-bg{
-background-image: url(img/phone.svg);
-margin-left: 0;
+.phone-bg{
+    background-image: url(img/phone.svg);
+    margin-left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-a.phone{
-    margin-left: 5px;
-}
-.down-menu__comment-bg{
+.comment-bg{
     background-image: url(img/comment.svg);
     background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .down-menu{
     margin-left: 15px;
@@ -98,12 +96,18 @@ a.phone{
     left: 0;
     bottom: 170px;
 }
-.down-menu__man-bg{
-    background-image: url(img/man.svg);
-    }
-.tel{
-    margin-bottom: 25px;
+a.down-menu__link{
+    display: block;
+    background-color: #FF3E79;;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
+.man-bg{
+    background-image: url(img/man.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    }
 .email{
     text-decoration: none;
     color: #1B1C21;
@@ -125,21 +129,35 @@ div.down-info{
     margin-left: 20px;
     margin-bottom: 25px;
 }
-a.down-info_chanlg{
-    text-decoration: none;
-    color: #1B1C21;
+.down-info__change-lang{
+    display: flex;
+    gap: 5px;
+    margin-top: 30px;
+}
+button{
+    background-color: white;
+    border: 0;
     font-family: TTLakesM;
+    font-size: 16px;
+    transition: 0.3s;
+    padding: 0;
+}
+button:hover:not(.lang-active) {
+    opacity: 0.6;
+}
+.down-info_chanlg{
+    list-style: none;
 }
 .lang-active{
     color: #7E7E82 !important;
 }
-.down-info_chanlg {
-    opacity: 1;
-    transition: opacity 0.3s ease;
+.down-menu__ul-DMenu{
+    display: flex;
+    gap: 15px;
+    margin-left: 5px;
 }
-
-.down-info_chanlg:hover:not(.lang-active) {
-    opacity: 0.5;
+.down-menu__li-DMenu{
+    list-style: none;
 }
 @font-face {
     font-family: "TTLakes";
@@ -165,6 +183,9 @@ a.down-info_chanlg{
         }
         .down-menu{
             bottom: 130px;
+        }
+        .down-info__change-lang{
+            margin-top: 3px;
         }
     }
 @media  (max-height: 600px){
